@@ -12,21 +12,7 @@ class Snake {
 
     //adding the movement of the snake
  move(body) {
-    if(keyDown('LEFT_ARROW')) {
-        this.body.velocityX = -3;
-    }
-
-    if(keyDown('RIGHT_ARROW')) {
-        this.body.velocityX = 3;
-    }
-
-    if(keyDown('UP_ARROW')) {
-        this.body.velocityY = -3;
-    }
-
-    if(keyDown('DOWN_ARROW')) {
-        this.body.velocityY = 3;
-    }
+    keyPressed(this.body);
 }
 
 //Adding the growth of the snake

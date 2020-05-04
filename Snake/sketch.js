@@ -24,7 +24,7 @@ function setup(){
 }
 
 function draw(){
-    background(backgroundImg);
+    background('white');
     Engine.update(engine);
     
     console.log(snakepos)
@@ -46,6 +46,22 @@ function move() {
 function grow() {
     snake.grow(snake,food);
 }
+
+function keyPressed(bdy) {
+    if(keyCode === 87) {
+        bdy.velocityY=-3;
+    }
+    if(keyCode === 68) {
+        bdy.velocityX=-3;
+    }    
+    if(keyCode === 83) {
+        bdy.velocityY=3;
+    }
+    if(keyCode === 65) {
+        bdy.velocityX=3;
+    }
+
+    }
 
 
 
